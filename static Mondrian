@@ -7,7 +7,7 @@ colorMode(RGB);
 noStroke();
 
 function rectangle(x,y,w,h){
-  var ran = random(5)
+  var ran = random(4.5)
   if (ran < 1){
   fill(255,0,0)
   }
@@ -20,7 +20,7 @@ function rectangle(x,y,w,h){
     else if (3 < ran && ran  < 4){
     fill(255,255,255)
   } 
-  else if (4 < ran && ran  < 5){
+  else if (4 < ran && ran  < 4.5){
     fill(0,0,0)
   } 
   stroke(0,0,0);
@@ -30,6 +30,7 @@ function rectangle(x,y,w,h){
 //row1
 rectangle(0,0,70,100)
 rectangle(70,0,60,50)
+
 rectangle(70+60,0,40,100)
 rectangle(70+60+40,0,70,120)
 rectangle(70+60+40+70,0,50,50)
@@ -55,5 +56,5 @@ rectangle(205,240,85,100)
 //row6
 rectangle(0,275,130,65)
 
-noLoop()
+pause() // it doesn't work, but this is just so it doesn't clear away right after
 
