@@ -34,3 +34,16 @@ function draw() {
 		line(x1, y1, x2, y2)
 }
 
+d)STROKE COLOR DEPENDS ON X-COORDINATE:
+
+ function setup() {
+  createCanvas(340, 340);
+  colorMode(HSB);
+}
+
+function draw(){
+  var x1 = random(width)
+  stroke(x1,100,100);
+  strokeWeight(4);
+  line(x1, random(height), x1, random(height));
+}
